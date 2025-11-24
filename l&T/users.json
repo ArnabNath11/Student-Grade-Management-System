@@ -1,0 +1,32 @@
+[
+    {
+        "username": "admin",
+        "password": "scrypt:32768:8:1$ozCU5c7wRJUmOMFK$af4685b2f09b5fead85a6810bcc96cedfed1e945af4b2d6dbebc496edc44ae42466e346fa416753bffee79ff7f6d40f0d352d17e7c6c15a8e7f588414cfb5346",
+        "role": "admin"
+    },
+    {
+        "username": "Arnab",
+        "password": "scrypt:32768:8:1$EyTVqICumZQAMcov$c645a08982fe7c9ee45262e0071fefd5f21523ffbf5dc8c741a8daee8cd5b872014bfcad40e4c6cb363e61f9f763eedc91303dbc287b345770750f2e140b3742",
+        "role": "user"
+    },
+    {
+        "username": "arnab",
+        "password": "scrypt:32768:8:1$VjKUmMJAuNVwCBNI$8d73f85e8ee0dd4c0b69143480b9b7032cf95de76ebd2c85904907f858e1209f0a92190102fb332d596558cd200ffe200a446d212584b439ae0b175faf8591f4",
+        "role": "user"
+    },
+    {
+        "username": "testuser",
+        "password": "scrypt:32768:8:1$hOpwJDQJp1RDSGTh$51db1ecf4038df1c8457123c2eab553832ba0e0d19f23e09f2917fb56335d4d4a21abb82a766dd35bf43078a002328c3f45775d64eb4219e891f22ea44a43e1e",
+        "role": "user"
+    },
+    {
+        "username": "test",
+        "password": "scrypt:32768:8:1$wMMBCkVfIfPntDxj$0b46f12a2ba280c78af8b9873d925d3bc20dba0e3ba1f6c774d77acfeb194b58beab21e5b1a04ce83399040ad816aca7555f5fd4b66d45abcbdb94f533b7bd85",
+        "role": "user"
+    },
+    {
+        "username": "Ankit",
+        "password": "scrypt:32768:8:1$VJRFcGtgutJATZDW$16764cf60fe93636ea7e51ee9a893075228c94cebbe02d8b2b1e73444a9ee0a164d9d12ef37de85b2081ff4321b25e04f6efd82f8ad00342d3896e440e38982f",
+        "role": "user"
+    }
+]

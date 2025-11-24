@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Register — GradeSys</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="dark">
+  <div class="auth-wrap">
+    <div class="brand">
+      <div class="logo">⌘</div>
+      <div>
+        <h1>GradeSys</h1>
+        <p class="muted">Create a new account</p>
+      </div>
+    </div>
+
+    <div class="card auth-card">
+      <h2>Register</h2>
+      {% if error %}
+        <p class="error">{{ error }}</p>
+      {% endif %}
+      <form method="POST" class="auth-form">
+        <input name="username" placeholder="Choose username" required>
+        <input name="password" placeholder="Password" type="password" required>
+        <input name="confirm" placeholder="Confirm password" type="password" required>
+        <div class="row">
+          <button type="submit" class="btn">Sign up</button>
+          <a class="link" href="/login">Back to login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

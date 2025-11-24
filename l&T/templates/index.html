@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GradeSys — Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark">
+  <header class="topbar">
+    <div class="left">
+      <div class="logo small">⌘</div>
+      <div class="title">
+        <h1>GradeSys</h1>
+        <p class="muted">Student Grades — CS Panel</p>
+      </div>
+    </div>
+    <div class="right userbox">
+      Logged in as: <strong>{{ user.username }}</strong> &nbsp; | &nbsp; <a href="/logout" class="link">Logout</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="panel">
+      <section class="card">
+        <h2>Add Student</h2>
+        <form id="addForm" class="grid">
+          <input name="student_id" placeholder="Student ID (e.g., CS2025-01)" required>
+          <input name="name" placeholder="Full Name" required>
+          <input name="marks" type="number" placeholder="Marks (0-100)" required>
+          <input name="semester" placeholder="Semester (e.g., 4)" required>
+          <input name="college" placeholder="College Name" required>
+          <button type="submit" class="btn">Add Student</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Search / Filter</h2>
+        <div class="filters">
+          <input id="q" placeholder="Search name or student id">
+          <input id="filterSemester" placeholder="Filter semester">
+          <input id="filterCollege" placeholder="Filter college">
+          <button onclick="loadStudents()" class="btn small">Search</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Students</h2>
+        <div class="table-wrap">
+          <table id="studentTable">
+            <thead><tr><th>ID</th><th>Student ID</th><th>Name</th><th>Marks</th><th>Grade</th><th>Sem</th><th>College</th><th>Actions</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <section class="card">
+        <h2>Top Marks</h2>
+        <canvas id="marksChart" width="400" height="300"></canvas>
+      </section>
+
+      <section class="card" id="editCard">
+        <h2>Edit Student</h2>
+        <div id="editArea">Select a student to edit.</div>
+      </section>
+
+      <section class="card">
+        <h3>About</h3>
+        <p class="muted small">GradeSys — a CS themed student grade management demo. Designed for college projects.</p>
+      </section>
+    </aside>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
